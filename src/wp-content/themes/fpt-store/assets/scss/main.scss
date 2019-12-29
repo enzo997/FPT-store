@@ -1,0 +1,390 @@
+/*
+ *  Goble container
+ */
+@media screen and (min-width: 1440px) {
+    .container{
+        max-width: 1230px; 
+    }
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none !important;
+    &:focus{
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+/* 
+ *  Fonts define 
+ */
+@font-face {
+    font-family: roboto-bd;
+    src: url("../fonts/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: roboto-md;
+    src: url("../fonts/Roboto-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: roboto-rl;
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: roboto-lt;
+    src: url("../fonts/Roboto-Light.ttf");
+    font-weight: 300;
+}
+/*
+ *  Header & Footer
+ */
+.header-mobile{
+    display: none;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    &--content-header--cont-logo{
+        img{
+            width: 100px;
+            height: auto;
+        }
+    }
+}
+.change-color{
+    box-shadow: 2px 3px 10px rgba(0,0,0,.14);
+}
+.header-desktop{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    &--content-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--col-left--cont-logo{
+            img{
+                width: 120px;
+                height: auto;
+            }
+        }
+        &--col-right--main-nav-menu{
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                li{
+                    margin: 0 30px;
+                    font-family: roboto-md;
+                    font-weight: 500;
+                    font-size: 16px;
+                    a{
+                        color: #000;
+                        -webkit-transition: all .3s ease-in-out;
+                        transition: all .3s ease-in-out;
+                        &:hover{
+                            color:  #f06e28;
+                        }
+                    }
+                }
+                .current-menu-item{
+                    a{
+                        color:  #f06e28;
+                    }
+                }
+                li:last-child{
+                    margin-right: 0;
+                    a{
+                        padding: 10px 30px;
+                        background-color:  #f06e28;
+                        color: #fff;
+                        border-radius: 4px;
+                        -webkit-transition: all .3s ease-in-out;
+                        transition: all .3s ease-in-out;
+                        &:hover{
+                            box-shadow: -6px 5px 8px rgba(0,0,0,.14);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//FOOTER
+.footer{
+    background:#fff;
+    padding-top:51px;
+    &--content-logo-footer{
+        img{
+            width: 149px;
+            height: auto;
+        }
+    }
+    &--content-logo-footer{
+        margin-right: 20px;
+    }
+    .content-footer-information{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 30px ;
+        border-bottom: 1px solid #ffe0d0;
+        .footer--group-address, .footer--group-contact{
+            width: 100%;
+            max-width: 227px;
+        }
+        .footer--title-h4{
+            color: #000;
+            margin-bottom: 14px;
+            font-family: roboto-md;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .footer--content-address,.footer--content-number-phone a, .footer--content-email a{
+            color: #2e2e2c;
+            line-height: 30px;
+            font-family: roboto-rl;
+            font-weight: 400;
+            font-size: 15px;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+        .footer--content-number-phone a:hover, .footer--content-email a:hover{
+            color:  #f06e28;
+        }
+    }
+    .content-icon-facebook{
+        a{
+            font-size: 15px;
+            color: #2e2e2c;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            &:hover{
+                color:  #f06e28;
+            }
+        }
+    }
+    .footer--title-h4{
+        a i{
+            font-size: 20px;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            &:hover{
+                color:  #f06e28;
+            }
+        }
+    }
+    .content-main-footer{
+        color: #2e2e2c;
+        line-height: 30px;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 15px;
+        font-family: roboto-rl;
+        font-weight: 400;
+    }
+    &--group-address, &--group-contact, &--group-follow-us{
+        margin-bottom: 20px;
+    }
+}
+.button-bottom-scroll{
+    width: 45px;
+    height: 35px;
+    position: fixed;
+    z-index: 999;
+    bottom: -40px;
+    right: 30px;
+    background: #222;
+    background: linear-gradient(20deg,#fff 5%,#f06e28 70%);
+    border-radius: 4px 4px 0 0;
+    box-shadow: -9px 5px 16px rgba(0,0,0,.14);
+    i{
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        color: #fff;
+        padding-top: 10px;
+    }
+    .fa-chevron-right:before {
+        font-size: 16px;
+        margin-left: -5px;
+    }
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.show-btn-scroll {
+    bottom: 0px;
+}
+.hidden-btn-scroll{
+    opacity: 0;
+}
+//============= RESPONSIVE ===============//
+@media screen and (max-width: 991px){
+    .header-desktop--content-header--col-right--main-nav-menu ul li{
+        margin: 0 13px;
+    }
+    .header-desktop--content-header--col-left--cont-logo img{
+        width: 100px;
+    }
+}
+@media screen and (max-width: 767px){
+    //========= header ==============
+    .header-mobile{
+        display: block;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        &--content-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            //btn-bar and btn close
+            &--cont-menu-bar{
+                .btn-bar{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    .icon-menu{
+                        width: 34px;
+                        height: 3px;
+                        background: #000;
+                        position: relative;
+                        display: block;
+                        z-index: 10;
+                        &::before{
+                            content:"";
+                            width: 17px;
+                            height: 3px;
+                            background: #000;
+                            display: block;
+                            position: absolute;
+                            top: 9px;   
+                            transition: all .3s ease-out;                          
+                        }
+                        &::after{
+                            content:"";
+                            width: 17px;
+                            height: 3px;
+                            background: #000;
+                            display: block;
+                            position: absolute;
+                            top: -9px;  
+                            right: 0;
+                            transition: all .3s ease-out;                          
+                        }
+                    }
+                    .close-icon-menu{
+                        width: 34px;
+                        height: 3px;
+                        background:#000;
+                        position: relative;
+                        display: block;
+                        transform: rotate(0deg);
+                        top: -3px; 
+                        transition: all .1s ease-out;  
+                        z-index: 0;                    
+                    }
+                }
+                //btn-bar active
+                .active-menu-show{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    .icon-menu{
+                        transform: rotate(45deg);
+                        transition: all .4s ease-out;      
+                        &::before{
+                            content:"";
+                            width: 34px;
+                            height: 3px;
+                            background: #f06e28;
+                            display: block;
+                            top: 0;
+                            position: absolute;  
+                            transition: all .1s ease-out;          
+                        }
+                        &::after{
+                            content:"";
+                            width: 34px;
+                            height: 3px;
+                            background: #f06e28;
+                            display: block;
+                            top: 0;
+                            position: absolute;      
+                            transition: all .1s ease-out;                       
+                        }
+                    }
+                    .close-icon-menu{
+                        width: 34px;
+                        height: 3px;
+                        background: #f06e28;
+                        position: relative;
+                        display: block;
+                        transform: rotate(-45deg);
+                        top: -3px; 
+                        transition: all .4s ease-out;                      
+                    }
+                }
+            }
+        }
+    }
+    .header-desktop--content-header--col-left--cont-logo, .header-desktop--content-contact{ //hidden logo of desktop at size 768px
+        display: none;
+    }
+    .header-desktop{//content-list-menu active or no active
+        top:100px;
+        height: 100%;
+        background-color: #fff;
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        left: -990px;
+        opacity: 0;
+        transition: all .5s ease-out;
+        overflow: auto;
+        padding-bottom: 100px;
+        padding-top: 20px;
+        &--content-header{
+            display: flex;
+            justify-content: center;
+            &--col-right--main-nav-menu{
+                display: block;
+                .main-nav-menu{
+                    display: block;
+                    li{
+                        text-align: center;
+                        a{
+                            font-size: 22px;
+                            font-weight: 400;
+                            line-height: 80px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .menu-nav-show{
+        left: 0px;
+        opacity: 1;
+        transition: all .5s ease-out;
+        z-index: 600;
+    }
+    //Can't scroll when background active=================================//////
+    .no-Scroll{
+        overflow-y:hidden;
+    }
+    //=== end header =====
+}

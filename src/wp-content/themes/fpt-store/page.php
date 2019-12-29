@@ -14,7 +14,7 @@ get_header();
 ?>
 
     <main id="" class="default--page">
-        <section class="section sec-default-content" style="Padding-top: 100px;">
+        <section class="section sec-default-content" style="Padding-top: 120px; height: 100vh">
             <div class="container">
                 <h1 class="sec-default-content--title title-h1 wow fadeInUp" data-wow-duration="2s"><?php echo get_the_title(); ?></h1>
                 <div class="sec-default-content--cont wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
