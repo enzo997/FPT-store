@@ -1,4 +1,7 @@
 <footer class="footer" id="footer">
+    <div class="cont-seseasonal-img">
+        <img src="<?php echo get_field('seasonal_images_of_the_year_at_footer','option')?get_field('seasonal_images_of_the_year_at_footer','option')['url']:"";?>" alt="image-season">
+    </div>
     <div class="container">
         <div class="content-footer-information wow fadeIn">
             <div class="footer--content-logo-footer">
@@ -40,7 +43,7 @@
                     <h4 class="footer--title-h4">
                         <a href="<?php echo  $link_facebook;?>" target="_blank">
                             <i class="fab fa-facebook"></i>
-                        </a><span style="margin-left: 6px">FACEBOOK</span>
+                        </a><span style="margin-left: 6px">FANPAGE</span>
                     </h4>
                     <div class="content-icon-facebook">
                         <a href="<?php echo  $link_facebook;?>" target="_blank">
@@ -51,7 +54,7 @@
             <?php endif;?>
         </div>
         <div class="content-main-footer">
-            Copyright © 2019 FPT Store
+            Copyright © 2020 FPT STORE
         </div>
     </div>
     <div class="button-bottom-scroll">

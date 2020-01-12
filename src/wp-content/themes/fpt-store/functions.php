@@ -25,9 +25,11 @@ function fundesign_style() {
     wp_enqueue_style('slick', THEME_URI. '/assets/css/slick.css');
     wp_enqueue_style('bootstrap', THEME_URI. '/assets/css/bootstrap.min.css');
     wp_enqueue_style('font-awesome5', THEME_URI. '/assets/fonts/fontawesome/css/all.css');
-    
-    // Add CSS
-    wp_enqueue_style('common', THEME_URI.'/assets/css/common.css?'.$date);
+
+    //ADD Home CSS
+    if(is_page_template('templates/home.php'))
+        wp_enqueue_style('home', THEME_URI.'/assets/css/home.css?'.$date);
+    // Add Main CSS
     wp_enqueue_style('main', THEME_URI.'/assets/css/main.css?'.$date);
 
     // Add JS

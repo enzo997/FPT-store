@@ -43,6 +43,54 @@
             "mime_types": ""
         },
         {
+            "key": "field_5e1b2c450a67c",
+            "label": "Seasonal images of the year",
+            "name": "seasonal_images_of_the_year",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e1b2f3e1fae5",
+            "label": "Seasonal images of the year at footer",
+            "name": "seasonal_images_of_the_year_at_footer",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5e0834d985084",
             "label": "Your information",
             "name": "",
@@ -184,5 +232,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1577596478
+    "modified": 1578839911
 }

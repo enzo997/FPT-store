@@ -16,6 +16,9 @@ a{
         box-shadow: none !important;
     }
 }
+.line-under{
+    width:40px;height:2px;background-color:#f06e28;margin:3px 0 40px
+}
 /* 
  *  Fonts define 
  */
@@ -68,9 +71,21 @@ a{
         justify-content: space-between;
         align-items: center;
         &--col-left--cont-logo{
+            position: relative;
             img{
                 width: 120px;
                 height: auto;
+            }
+            .cont-seseasonal-img{
+                position: absolute;
+                width: 170px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                img{
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
         &--col-right--main-nav-menu{
@@ -80,6 +95,7 @@ a{
                 align-items: center;
                 padding: 0;
                 margin: 0;
+                list-style: none;
                 li{
                     margin: 0 30px;
                     font-family: roboto-md;
@@ -104,14 +120,24 @@ a{
                     a{
                         padding: 10px 30px;
                         background-color:  #f06e28;
+                        border: 1px solid #f06e28;
                         color: #fff;
                         border-radius: 4px;
                         -webkit-transition: all .3s ease-in-out;
                         transition: all .3s ease-in-out;
                         &:hover{
                             box-shadow: -6px 5px 8px rgba(0,0,0,.14);
+                            background-color:  #fff;
+                            color: #f06e28;
+                            border: 1px solid #f06e28;
                         }
                     }
+                }
+                li:last-child.current-menu-item a{
+                    background-color:  #fff;
+                    color: #f06e28;
+                    border: 1px solid #f06e28;
+                    box-shadow: -6px 5px 8px rgba(0,0,0,.14);
                 }
             }
         }
@@ -121,7 +147,21 @@ a{
 .footer{
     background:#fff;
     padding-top:51px;
+    position: relative;
+    .cont-seseasonal-img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        width: 219px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
     &--content-logo-footer{
+        position: relative;
+        z-index: 100;
         img{
             width: 149px;
             height: auto;
@@ -226,12 +266,33 @@ a{
     opacity: 0;
 }
 //============= RESPONSIVE ===============//
+@media screen and (max-width:1279px){
+    .footer .cont-seseasonal-img{
+        top: 110px;
+        width: 168px;
+        height: 184px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
 @media screen and (max-width: 991px){
     .header-desktop--content-header--col-right--main-nav-menu ul li{
         margin: 0 13px;
     }
     .header-desktop--content-header--col-left--cont-logo img{
         width: 100px;
+    }
+    .footer .cont-seseasonal-img{
+        top: 10px;
+    }
+}
+@media screen and (max-width:768px){
+    .footer .cont-seseasonal-img{
+        width: 110px;
+        height: 80px;
+        top: 0;
     }
 }
 @media screen and (max-width: 767px){
@@ -249,6 +310,20 @@ a{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            &--cont-logo{
+                position: relative;
+                .cont-seseasonal-img{
+                    position: absolute;
+                    width: 130px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
             //btn-bar and btn close
             &--cont-menu-bar{
                 .btn-bar{
@@ -387,4 +462,24 @@ a{
         overflow-y:hidden;
     }
     //=== end header =====
+    .footer .cont-seseasonal-img{
+        width: 168px;
+        height: 150px;
+        top: 85px;
+    }
+}
+@media screen and (max-width:575px){
+    .footer .cont-seseasonal-img{
+        width: 110px;
+        height: 80px;
+        top: 0;
+    }
+}
+@media screen and (max-width:425px){
+    .footer .cont-seseasonal-img{
+        width: 140px;
+        height: 130px;
+        top: 36px;
+        left: 170px;
+    }
 }

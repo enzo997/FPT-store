@@ -17,6 +17,9 @@
                 <div class="header-mobile--content-header--cont-logo"> 
                     <a href="<?php echo get_home_url(); ?>">
                         <img src="<?php echo get_field('logo_fpt_store','option')?get_field('logo_fpt_store','option')['url']:DF_IMAGE. '/logo.png';?>" alt="<?php echo get_field('logo_fpt_store','option')?get_field('logo_fpt_store','option')['name']:"logo";?>" />
+                        <div class="cont-seseasonal-img">
+                            <img src="<?php echo get_field('seasonal_images_of_the_year','option')?get_field('seasonal_images_of_the_year','option')['url']:DF_IMAGE.'/seasonal-images.png';?>" alt="">
+                        </div>
                     </a>
                 </div>
                 <div class="header-mobile--content-header--cont-menu-bar">
@@ -35,6 +38,9 @@
                     <div class="header-desktop--content-header--col-left--cont-logo ">  
                         <a href="<?php echo get_home_url(); ?>">
                             <img src="<?php echo get_field('logo_fpt_store','option')?get_field('logo_fpt_store','option')['url']:DF_IMAGE. '/logo.png';?>" alt="<?php echo get_field('logo_fpt_store','option')?get_field('logo_fpt_store','option')['name']:"logo";?>" />
+                            <div class="cont-seseasonal-img">
+                                <img src="<?php echo get_field('seasonal_images_of_the_year','option')?get_field('seasonal_images_of_the_year','option')['url']:DF_IMAGE.'/seasonal-images.png';?>" alt="">
+                            </div>
                         </a>
                     </div>
                 </div>
