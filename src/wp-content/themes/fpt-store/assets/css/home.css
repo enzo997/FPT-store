@@ -1,0 +1,108 @@
+/* 
+ *  Fonts define 
+ */
+@font-face {
+  font-family: roboto-bd;
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: 700; }
+@font-face {
+  font-family: roboto-md;
+  src: url("../fonts/Roboto-Medium.ttf");
+  font-weight: 500; }
+@font-face {
+  font-family: roboto-rl;
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: 400; }
+@font-face {
+  font-family: roboto-lt;
+  src: url("../fonts/Roboto-Light.ttf");
+  font-weight: 300; }
+.home-page {
+  padding-top: 120px; }
+  .home-page--banner-top {
+    margin-bottom: 100px; }
+    .home-page--banner-top .content-image {
+      width: 100%;
+      height: 600px;
+      outline: none !important; }
+      .home-page--banner-top .content-image img {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center; }
+  .home-page--service {
+    margin-bottom: 100px; }
+    .home-page--service--cont-group .col-custom {
+      margin-bottom: 30px; }
+      .home-page--service--cont-group .col-custom .cont-box {
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out; }
+        .home-page--service--cont-group .col-custom .cont-box .cont-image {
+          width: 100%;
+          height: 355px; }
+          .home-page--service--cont-group .col-custom .cont-box .cont-image img {
+            width: 100%;
+            height: 100%;
+            -o-object-position: center;
+               object-position: center;
+            -o-object-fit: cover;
+               object-fit: cover; }
+        .home-page--service--cont-group .col-custom .cont-box .cont-title-service {
+          height: 100%;
+          min-height: 50px;
+          padding: 10px; }
+          .home-page--service--cont-group .col-custom .cont-box .cont-title-service a {
+            cursor: pointer;
+            color: #000;
+            font-family: roboto-md;
+            font-weight: 500;
+            font-size: 18px;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out; }
+            .home-page--service--cont-group .col-custom .cont-box .cont-title-service a:hover a {
+              color: #f06e28; }
+        .home-page--service--cont-group .col-custom .cont-box:hover {
+          -webkit-box-shadow: -6px 5px 8px rgba(0, 0, 0, 0.14);
+                  box-shadow: -6px 5px 8px rgba(0, 0, 0, 0.14);
+          cursor: pointer; }
+          .home-page--service--cont-group .col-custom .cont-box:hover .cont-title-service a {
+            color: #f06e28; }
+  .home-page--blog {
+    margin-bottom: 100px; }
+    .home-page--blog--cont-group .col-custom {
+      margin-bottom: 30px; }
+      .home-page--blog--cont-group .col-custom .cont-box {
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out; }
+        .home-page--blog--cont-group .col-custom .cont-box .cont-image {
+          width: 100%;
+          height: 355px; }
+          .home-page--blog--cont-group .col-custom .cont-box .cont-image img {
+            width: 100%;
+            height: 100%;
+            -o-object-position: center;
+               object-position: center;
+            -o-object-fit: cover;
+               object-fit: cover; }
+        .home-page--blog--cont-group .col-custom .cont-box .cont-text {
+          height: 100%;
+          min-height: 50px;
+          padding: 10px; }
+          .home-page--blog--cont-group .col-custom .cont-box .cont-text a {
+            cursor: pointer;
+            color: #000;
+            font-family: roboto-md;
+            font-weight: 500;
+            font-size: 18px;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out; }
+            .home-page--blog--cont-group .col-custom .cont-box .cont-text a:hover a {
+              color: #f06e28; }
+        .home-page--blog--cont-group .col-custom .cont-box:hover {
+          -webkit-box-shadow: -6px 5px 8px rgba(0, 0, 0, 0.14);
+                  box-shadow: -6px 5px 8px rgba(0, 0, 0, 0.14);
+          cursor: pointer; }
+          .home-page--blog--cont-group .col-custom .cont-box:hover .cont-title-service a {
+            color: #f06e28; }

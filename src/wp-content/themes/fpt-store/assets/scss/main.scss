@@ -1,11 +1,13 @@
+@import 'variables.scss';
 /*
  *  Goble container
  */
 @media screen and (min-width: 1440px) {
     .container{
-        max-width: 1230px; 
+        max-width: 1330px; 
     }
 }
+//COMMON CSS
 body{
     overflow-x: hidden;
 }
@@ -17,31 +19,15 @@ a{
     }
 }
 .line-under{
-    width:40px;height:2px;background-color:#f06e28;margin:3px 0 40px
+    width:40px;height:3px;background-color:#f06e28;margin: 2px auto 50px auto;
 }
-/* 
- *  Fonts define 
- */
-@font-face {
+.title-h4{
     font-family: roboto-bd;
-    src: url("../fonts/Roboto-Bold.ttf");
     font-weight: 700;
+    font-size: 30px;
+    text-align: center;
 }
-@font-face {
-    font-family: roboto-md;
-    src: url("../fonts/Roboto-Medium.ttf");
-    font-weight: 500;
-}
-@font-face {
-    font-family: roboto-rl;
-    src: url("../fonts/Roboto-Regular.ttf");
-    font-weight: 400;
-}
-@font-face {
-    font-family: roboto-lt;
-    src: url("../fonts/Roboto-Light.ttf");
-    font-weight: 300;
-}
+//END COMMON CSS
 /*
  *  Header & Footer
  */
@@ -199,6 +185,9 @@ a{
         .footer--content-number-phone a:hover, .footer--content-email a:hover{
             color:  #f06e28;
         }
+        // .footer--content-address,.footer--content-number-phone, .footer--content-email{
+        //     text-align: center;
+        // }
     }
     .content-icon-facebook{
         a{
