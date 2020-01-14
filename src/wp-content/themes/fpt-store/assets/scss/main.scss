@@ -20,12 +20,68 @@ a{
 }
 .line-under{
     width:40px;height:3px;background-color:#f06e28;margin: 2px auto 50px auto;
+    position: relative;
+    z-index: 100;
 }
 .title-h4{
     font-family: roboto-bd;
     font-weight: 700;
     font-size: 30px;
     text-align: center;
+}
+.btn-send{
+    display: flex;
+    justify-content: center;
+    input{
+        margin: 0 auto;
+        background-color:  #f06e28;
+        border: 1px solid #f06e28;
+        color: #fff;
+        border-radius: 4px;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        width: 100px;
+        height: 40px;
+        position: relative;
+        z-index: 100;
+        padding: 0;
+        &:hover{
+            box-shadow: -6px 5px 8px rgba(0,0,0,.14);
+            background-color:  #fff;
+            color: #f06e28;
+            border: 1px solid #f06e28;
+        }
+    }
+}
+li:last-child.current-menu-item a{
+    background-color:  #fff;
+    color: #f06e28;
+    border: 1px solid #f06e28;
+    box-shadow: -6px 5px 8px rgba(0,0,0,.14);
+}
+.btn-view-more{
+    color: #000;
+    font-family: roboto-rl;
+    font-size: 16px;
+    font-weight: 400;
+    width: 140px;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+    margin:  0 auto;
+    &::after{
+        content: url('../images/default/icon-arrow.png'); 
+        margin-left: 12px;
+        -webkit-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+    }
+    &:hover{
+        color: #f06e28;
+        cursor: pointer;
+        &::after{
+            content: url('../images/default/Arrow.svg'); 
+            margin-left: 15px;
+        }
+    }
 }
 //END COMMON CSS
 /*

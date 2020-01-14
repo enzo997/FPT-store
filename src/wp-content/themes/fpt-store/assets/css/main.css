@@ -37,13 +37,70 @@ a {
   width: 40px;
   height: 3px;
   background-color: #f06e28;
-  margin: 2px auto 50px auto; }
+  margin: 2px auto 50px auto;
+  position: relative;
+  z-index: 100; }
 
 .title-h4 {
   font-family: roboto-bd;
   font-weight: 700;
   font-size: 30px;
   text-align: center; }
+
+.btn-send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .btn-send input {
+    margin: 0 auto;
+    background-color: #f06e28;
+    border: 1px solid #f06e28;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    z-index: 100;
+    padding: 0; }
+    .btn-send input:hover {
+      -webkit-box-shadow: -6px 5px 8px rgba(0, 0, 0, 0.14);
+              box-shadow: -6px 5px 8px rgba(0, 0, 0, 0.14);
+      background-color: #fff;
+      color: #f06e28;
+      border: 1px solid #f06e28; }
+
+li:last-child.current-menu-item a {
+  background-color: #fff;
+  color: #f06e28;
+  border: 1px solid #f06e28;
+  -webkit-box-shadow: -6px 5px 8px rgba(0, 0, 0, 0.14);
+          box-shadow: -6px 5px 8px rgba(0, 0, 0, 0.14); }
+
+.btn-view-more {
+  color: #000;
+  font-family: roboto-rl;
+  font-size: 16px;
+  font-weight: 400;
+  width: 140px;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  margin: 0 auto; }
+  .btn-view-more::after {
+    content: url("../images/default/icon-arrow.png");
+    margin-left: 12px;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+  .btn-view-more:hover {
+    color: #f06e28;
+    cursor: pointer; }
+    .btn-view-more:hover::after {
+      content: url("../images/default/Arrow.svg");
+      margin-left: 15px; }
 
 /*
  *  Header & Footer
