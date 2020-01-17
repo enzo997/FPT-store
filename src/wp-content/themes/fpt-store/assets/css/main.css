@@ -102,6 +102,64 @@ li:last-child.current-menu-item a {
       content: url("../images/default/Arrow.svg");
       margin-left: 15px; }
 
+.header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) {
+  position: relative; }
+  .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2)::after {
+    position: absolute;
+    content: "" !important;
+    width: 7px !important;
+    height: 100% !important;
+    background-image: url(../images/default/Path.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 6px !important;
+    cursor: pointer !important;
+    -webkit-filter: brightness(0.5) !important;
+            filter: brightness(0.5) !important;
+    right: -15px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out; }
+  .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2):hover:after {
+    -webkit-transform: rotateZ(90deg) !important;
+            transform: rotateZ(90deg) !important; }
+  .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2):hover .sub-menu {
+    opacity: 1; }
+  .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.21);
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.21);
+    z-index: 1000;
+    top: 30px;
+    width: 300px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px; }
+    .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu li {
+      margin: 5px 0 !important; }
+      .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu li a {
+        text-transform: lowercase !important; }
+      .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu li::after {
+        display: none !important; }
+    .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu li:last-child a {
+      padding: unset !important;
+      background-color: unset !important;
+      border: unset !important;
+      color: unset !important;
+      border-radius: unset !important; }
+      .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu li:last-child a:hover {
+        color: #f06e28 !important;
+        cursor: pointer;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important; }
+    .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu li:last-child.current-menu-item a {
+      -webkit-box-shadow: none !important;
+              box-shadow: none !important;
+      color: #f06e28 !important; }
+
 /*
  *  Header & Footer
  */
