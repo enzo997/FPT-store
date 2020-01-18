@@ -114,8 +114,8 @@ li:last-child.current-menu-item a {
     background-repeat: no-repeat !important;
     background-size: 6px !important;
     cursor: pointer !important;
-    -webkit-filter: brightness(0.5) !important;
-            filter: brightness(0.5) !important;
+    -webkit-filter: brightness(0) !important;
+            filter: brightness(0) !important;
     right: -15px;
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out; }
@@ -141,7 +141,8 @@ li:last-child.current-menu-item a {
     .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu li {
       margin: 5px 0 !important; }
       .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu li a {
-        text-transform: lowercase !important; }
+        text-transform: lowercase !important;
+        color: #000 !important; }
       .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu li::after {
         display: none !important; }
     .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu li:last-child a {
@@ -155,7 +156,7 @@ li:last-child.current-menu-item a {
         cursor: pointer;
         -webkit-box-shadow: none !important;
                 box-shadow: none !important; }
-    .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu li:last-child.current-menu-item a {
+    .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu li.current-menu-item a {
       -webkit-box-shadow: none !important;
               box-shadow: none !important;
       color: #f06e28 !important; }
@@ -551,7 +552,16 @@ li:last-child.current-menu-item a {
   .footer .cont-seseasonal-img {
     width: 168px;
     height: 150px;
-    top: 85px; } }
+    top: 85px; }
+
+  .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2)::after {
+    right: 50px !important; }
+
+  .header-desktop--content-header--col-right--main-nav-menu ul li:nth-child(2) .sub-menu {
+    top: 100%;
+    left: 37%;
+    -webkit-transform: translate(-40%, -37%);
+            transform: translate(-40%, -37%); } }
 @media screen and (max-width: 575px) {
   .footer .cont-seseasonal-img {
     width: 110px;

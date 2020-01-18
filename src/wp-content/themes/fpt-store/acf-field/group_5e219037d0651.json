@@ -20,8 +20,8 @@
         },
         {
             "key": "field_5e21906421763",
-            "label": "Introduce",
-            "name": "introduce",
+            "label": "Introduce Tr hinh",
+            "name": "introduce_tr_hinh",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -351,5 +351,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579258842
+    "modified": 1579332823
 }
