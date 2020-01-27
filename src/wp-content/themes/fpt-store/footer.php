@@ -62,6 +62,11 @@
             <div class="btn-scroll-top"><i class="fa fas fa-chevron-right"></i></div>
         </div>
     </div>
+    <a class="button-call-now" href="tel:+841234567">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+    <div class="boder-btn"></div>
+    <div class="boder-btn_1"></div>
 </footer>
 <?php wp_footer(); ?>
 </div>

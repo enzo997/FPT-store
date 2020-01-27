@@ -149,6 +149,54 @@ li:last-child.current-menu-item a{
         }
     }
 }
+.button-call-now{
+    width: 60px;
+    height: 60px;
+    background: #0c3;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 2000;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+        font-size: 25px;
+        color: #fff;
+        -webkit-animation-name: animation_btn_call; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+        animation-name: animation_btn_call;
+        animation-duration: .5s;
+        animation-direction: alternate-reverse; 
+        animation-iteration-count: infinite;
+    }
+    @-webkit-keyframes animation_btn_call {
+        0% {transform: rotate(25deg);}
+        25% {transform: rotate(-25deg);}
+        50% {transform: rotate(25deg);}
+        100% {transform: rotate(0deg);}
+    }
+      /* Standard syntax */
+    @keyframes animation_btn_call {
+        0% {transform: rotate(25deg);}
+        25% {transform: rotate(-25deg);}
+        50% {transform: rotate(25deg);}
+        100% {transform: rotate(0deg);}
+    }
+}
+.boder-btn{
+    width: 65px;
+    height: 65px;
+    background: #000;
+    opacity: 0.4;
+    position: fixed;
+    bottom: 27px;
+    left: 27px;
+    z-index: 1999;
+    border-radius: 50%;
+}
 //END COMMON CSS
 /*
  *  Header & Footer
