@@ -14,7 +14,7 @@ $slug = $data_slug[0]->slug
     <?php
         if($slug == 'goi-dich-vu-internet'){
             ?>
-                <h1 class="">INTERNET</h1>
+            
             <?php
         }
         elseif($slug == 'goi-dich-vu-truyen-hinh'){

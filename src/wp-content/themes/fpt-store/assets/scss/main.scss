@@ -161,16 +161,25 @@ li:last-child.current-menu-item a{
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+    &:hover {
+        background: #f7f5f5;
+        i{
+        color: #f06e28}
+    }   
     i{
         font-size: 25px;
         color: #fff;
         -webkit-animation-name: animation_btn_call; /* Safari 4.0 - 8.0 */
-        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: .5s; /* Safari 4.0 - 8.0 */
         -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
         animation-name: animation_btn_call;
         animation-duration: .5s;
         animation-direction: alternate-reverse; 
         animation-iteration-count: infinite;
+        -webkit-transition: all .4s ease-out;
+        transition: all .4s ease-out;
     }
     @-webkit-keyframes animation_btn_call {
         0% {transform: rotate(25deg);}
@@ -187,15 +196,81 @@ li:last-child.current-menu-item a{
     }
 }
 .boder-btn{
-    width: 65px;
-    height: 65px;
-    background: #000;
-    opacity: 0.4;
+    width: 63px;
+    height: 63px;
+    background: rgb(78, 78, 78);
+    opacity: 0.35;
     position: fixed;
-    bottom: 27px;
-    left: 27px;
+    bottom: 28px;
+    left: 28px;
     z-index: 1999;
     border-radius: 50%;
+    &{
+        -webkit-animation-name: animation_circal_call; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: .85s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+        animation-name: animation_circal_call;
+        animation-duration: .85s;
+        animation-direction: alternate-reverse; 
+        animation-iteration-count: infinite;
+    }
+    @-webkit-keyframes animation_circal_call {
+        0%{width: 65px;height: 65px;}
+        15%{width: 68px;height: 68px; bottom:26px; left:26px}
+        25%{width: 70px;height: 70px; bottom:25px; left:25px}
+        35%{width: 73px;height: 73px; bottom:24px; left:24px}
+        45%{width: 75px;height: 75px; bottom:23px; left:23px}
+        55%{width: 78px;height: 78px; bottom:21px; left:21px}
+        65%{width: 80px;height: 80px; bottom:20px; left:20px}
+        75%{width: 83px;height: 83px; bottom:19px; left:19px}
+        85%{width: 85px;height: 85px; bottom:18px; left:18px}
+        95%{width: 88px;height: 88px; bottom:17px; left:17px}
+        100%{width: 90px;height: 90px; bottom:16px; left:16px}
+    }
+      /* Standard syntax */
+    @keyframes animation_circal_call {
+        0%{width: 65px;height: 65px;}
+        15%{width: 68px;height: 68px; bottom:26px; left:26px}
+        25%{width: 70px;height: 70px; bottom:25px; left:25px}
+        35%{width: 73px;height: 73px; bottom:24px; left:24px}
+        45%{width: 75px;height: 75px; bottom:23px; left:23px}
+        55%{width: 78px;height: 78px; bottom:21px; left:21px}
+        65%{width: 80px;height: 80px; bottom:20px; left:20px}
+        75%{width: 83px;height: 83px; bottom:19px; left:19px}
+        85%{width: 85px;height: 85px; bottom:18px; left:18px}
+        95%{width: 88px;height: 88px; bottom:17px; left:17px}
+        100%{width: 90px;height: 90px; bottom:16px; left:16px}
+    }
+}
+.boder-btn_1{
+    width: 88px;
+    height: 88px;
+    border: 1px solid  rgb(78, 78, 78);
+    opacity: 0.1;
+    position: fixed;
+    bottom: 18px;
+    left: 18px;
+    z-index: 1999;
+    border-radius: 50%;
+    &{
+        -webkit-animation-name: animation_circal; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: .9s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+        animation-name: animation_circal;
+        animation-duration: .9s;
+        animation-direction: alternate-reverse; 
+        animation-iteration-count: infinite;
+    }
+    @-webkit-keyframes animation_circal {
+        0%{width: 90px;height: 90px; bottom:16px; left:16px;opacity: 0.3;}
+        50%{width: 100px;height: 100px; bottom:11px; left:11px; opacity: 0.4;}
+        100%{width: 125px;height: 125px; bottom:0px; left:-1px; opacity: 0;}
+    }
+    @keyframes animation_circal {
+        0%{width: 90px;height: 90px; bottom:16px; left:16px;opacity: 0.3;}
+        50%{width: 100px;height: 100px; bottom:11px; left:11px; opacity: 0.4;}
+        100%{width: 125px;height: 125px; bottom:0px; left:-1px; opacity: 0;}
+    }
 }
 //END COMMON CSS
 /*
