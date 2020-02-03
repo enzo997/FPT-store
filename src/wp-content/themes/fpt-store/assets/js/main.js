@@ -94,3 +94,48 @@ $(document).ready(function(){
     });
     // END select
 });
+//Hieu ung tuyet roi
+var canvas = document.getElementById('snow-falling');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+var ctx = canvas.getContext('2d');
+// console.log(ctx);
+
+function Snow(){
+    this.x = Math.round(Math.random()*canvas.width);
+    this.y = Math.round(Math.random()*canvas.height);
+    this.r = Math.round(Math.random())* 10 + 5; //10 -> 5px randomw ban kinh
+}
+Snow.prototype.update = function(){
+    // Draw
+    ctx.beginPath();
+    ctx.fillStyle = "#fff";
+    ctx.arc(this.x, this.y, this.r, 0 , Math.PI * 2, false);// draw circle
+    ctx.fill();
+    ctx.closePath();
+
+    //toa do roi
+    this.y += 5;  //speed; fall follow y
+    // tao vong lap de tuyet roi lien tuc
+    if(this.y > canvas.height){
+        this.y = 0;
+    }
+}
+var totalSnows = 100;
+var snows = [];
+
+function fallingSnow(){
+    ctx.clearRect(0,0,canvas.width, canvas.height);
+    for(var i = 0; i < totalSnows; i++){
+        snows[i].update();
+    }
+}
+
+window.onload = function(){
+    for( var i = 0; i < totalSnows; i++){
+        snows.push( new Snow());
+    }
+    setInterval(fallingSnow, 40);// speed
+}
+/////////////////////////////////////

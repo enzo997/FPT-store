@@ -102,6 +102,7 @@ get_header();
         </div>
     </section>
     <section class="home-page--contact">
+        <canvas  id = "snow-falling"></canvas>
         <div class="background-behind">
             <img src="<?php echo DF_IMAGE. '/background-contact.jpg';?>" alt="background-contact">
         </div>

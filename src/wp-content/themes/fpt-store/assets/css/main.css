@@ -422,6 +422,14 @@ li:last-child.current-menu-item a {
     bottom: 0px;
     left: -1px;
     opacity: 0; } }
+#snow-falling {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
 /*
  *  Header & Footer
  */

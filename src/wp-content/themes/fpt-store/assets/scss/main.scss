@@ -272,6 +272,13 @@ li:last-child.current-menu-item a{
         100%{width: 125px;height: 125px; bottom:0px; left:-1px; opacity: 0;}
     }
 }
+#snow-falling{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+}
 //END COMMON CSS
 /*
  *  Header & Footer
