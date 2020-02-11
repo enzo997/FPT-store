@@ -1,8 +1,8 @@
 <?php
 define('THEME_URI', get_template_directory_uri());
 define('DF_IMAGE', THEME_URI. '/assets/images/default');
-define('TP_PART', THEME_URI. '/template-part');
-define('THEME_DIR', get_template_directory());
+define('TP_PART', THEME_URI. '/template-parts');
+define('THEME_PATH', get_template_directory());
 include TEMPLATEPATH .'/function/function.php';
 
 // Local JSON acf

@@ -40,6 +40,38 @@ $(document).ready(function(){
         dots: false,
         infinite: true
     });
+    $('.cate-internet .row').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: false,
+        speed: 1300,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
     // JS select
     $('select').each(function() {
         var $this = jQuery(this);

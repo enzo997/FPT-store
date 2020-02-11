@@ -9,9 +9,190 @@
             font-size: 30px;
             font-weight: 700px;
             text-align: center;
+            color: #003572;
         }
         .row{
-            padding-top: 50px;
+            padding-top: 30px;
+            .col-custom{
+                padding-bottom: 20px;
+                background-color: #fff;
+                outline: none !important;
+                margin: 0 10px;
+                border-radius: 20px;
+                box-shadow: 0 0 14px -10px rgba(0,0,0,0.8);
+                .name-service{
+                    font-size: 37px;
+                    text-align: center;
+                    margin: 10px;
+                    font-weight: 300;
+                    font-family: roboto-bd;
+                    text-shadow: 1px 1px 3px #000;
+                }
+                .infor-group{
+                    position: relative;
+                    padding: 10px 15px;
+                    border-radius: 20px 20px 0px 0px;
+                    .price{
+                        color: #fff;
+                        font-size: 30px;
+                        padding-top: 10px;
+                        font-weight: 300;
+                        font-family: roboto-bd;
+                        text-align: center;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            height: 5px;
+                            width: calc(100% - 30px);
+                            bottom: -2px;
+                            left: 15px;
+                            z-index: 99;
+                            -webkit-border-radius: 18px;
+                            -moz-border-radius: 18px;
+                            border-radius: 18px;
+                        }
+                    }
+                    .VND{
+                        font-family: roboto-md;
+                        color: #fff;
+                        font-size: 18px;
+                        text-align: center;
+                        border-bottom: 1.2px solid rgba(255,255,255,.4);
+                        padding-bottom: 15px;
+                    }
+                    .bandwidth{
+                        padding-top: 5px;
+                        color: #fff;
+                        font-size: 30px;
+                        font-family: roboto-bd;
+                        text-align: center;
+                        padding-bottom: 10px;
+                        span{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .group-description{
+                    padding: 10px 15px;
+                    border-radius:  0px 0px 20px 20px;
+                    background-color: #e3e3e3;
+                    box-shadow: 0 15px 15px -12px rgba(0,0,0,0.35);
+                    .description-content{
+                        padding: 10px 0;
+                        display: flex;
+                        border-bottom: 1.2px solid rgba(255,255,255,.4);
+                        &:last-child{
+                            border-bottom:none;
+                        }
+                        .col-left{
+                            margin-right: 5px;
+                            img{
+                                width: 43px;
+                                height: auto;
+                            }
+                        }
+                        .col-right{
+                            font-family: roboto-rl;
+                            font-weight: 400;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .VAT{
+                    font-family: roboto-rl;
+                    margin: 0;
+                    color: #c1c1c1;
+                    font-size: 13px;
+                    letter-spacing: -.2px;
+                    font-weight: 400;
+                    padding: 15px 15px 0 15px;
+                    text-align: center;
+                }
+                .btn-resigter{
+                    background: #f06e28;
+                    text-align: center;
+                    padding: 7px;
+                    border-radius: 20px;
+                    margin:0 auto;
+                    width: 180px;
+                    -webkit-transition: all .3s ease-in-out;
+                        transition: all .3s ease-in-out;
+                    a{
+                        cursor: pointer;
+                        color: #fff;
+                        font-size: 18px;
+                        font-family: roboto-rl;
+                        -webkit-transition: all .3s ease-in-out;
+                        transition: all .3s ease-in-out;
+                    }
+                    &:hover{
+                        background: #fff;
+                        box-shadow: 2px 2px 3px #ccc;
+                        a{
+                            color: #f06e28;
+                        }
+                    }
+                }
+            }
+            .element-1{
+                .name-service{
+                    color: #018bf9;
+                }
+                .infor-group{
+                    background-color: #018bf9;
+                    background-image: linear-gradient(#008fff,#0a59a9);
+                    .price::before{
+                        background-image: linear-gradient(to right,#08478f,#008dfc,#08478f);
+                    }
+                }
+                
+            }
+            .element-2{
+                .name-service{
+                    color: #f06e28;
+                }
+                .infor-group{
+                    background-color: #f27d4a;
+                    background-image: linear-gradient(#f3824c,#e04b39);
+                    .price::before{
+                        background-image: linear-gradient(to right,#d1351e,#ff865b,#d1351e);
+                    }
+                }
+            }
+            .element-3{
+                .name-service{
+                    color: #5da850;
+                }
+                .infor-group{
+                    background-color: #5da850;
+                    background-image: linear-gradient(#8cb753,#178e4a);
+                    .price::before{
+                        background-image: linear-gradient(to right,#0d833e,#90bb59,#0d833e);
+                    }
+                }
+            }
+            .element-4{
+                .name-service{
+                    color: #a35dfb;
+                }
+                .infor-group{
+                    background-color: #a35dfb;
+                    background-image: linear-gradient(#d161ff,#7056f0);
+                    .price::before{
+                        background-image: linear-gradient(to right,#6b4dfb,#bd79ff,#6b4dfb);
+                    }
+                }
+            }
+        }
+        .slick-slider{
+            .slick-list{
+                .slick-track{
+                    display: flex !important;
+                    .slick-slide{
+                        height:  initial !important;
+                    }
+                }
+            }
         }
     }
 }
