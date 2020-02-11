@@ -30,6 +30,7 @@ function fundesign_style() {
     if(is_page_template('templates/home.php'))
         wp_enqueue_style('home', THEME_URI.'/assets/css/home.css?'.$date);
     // Add Main CSS
+    wp_enqueue_style('single-service', THEME_URI.'/assets/css/single-service.css?'.$date);
     wp_enqueue_style('main', THEME_URI.'/assets/css/main.css?'.$date);
 
     // Add JS

@@ -1,0 +1,17 @@
+@import 'variables.scss';
+.single-service{
+    background: #f8f8f8;
+    .cate-internet{
+        margin-bottom: 80px;
+        padding-top: 50px;
+        h1{
+            font-family: roboto-bd;
+            font-size: 30px;
+            font-weight: 700px;
+            text-align: center;
+        }
+        .row{
+            padding-top: 50px;
+        }
+    }
+}
